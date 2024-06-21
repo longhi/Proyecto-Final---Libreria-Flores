@@ -1,0 +1,193 @@
+.color-menu {
+  background-color: #d32f23;
+}
+
+.d-flex .btn-outline-success {
+  color: #000;
+  background-color: #eaff15;
+  border-color: #f3fb00;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.d-flex .form-control {
+  margin-right: 1em;
+  width: 450px; /* Ajusta este valor según tus necesidades */
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.nav-link i {
+  font-size: 2.2em !important;
+  color: rgb(234 255 21);
+}
+/*CSS AGREGADO JUAN ARANDA*/
+.nav-link {
+  color: white;
+  margin: 10px 3.5em !important;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+}
+
+.productos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+  width: calc(33% - 4em);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-agregar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #218838;
+}
+
+#carrito {
+  background-color: #f8f9fa;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.carrito-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+}
+
+#btn-comprar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-comprar:hover {
+  background-color: #0056b3;
+}
+
+#contacto {
+  background-color: #e9ecef;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+#contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contacto div {
+  margin-bottom: 1em;
+}
+
+#contacto label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#contacto input,
+#contacto textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contacto button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+  background-color: #218838;
+}
+
+#testimonios {
+  background-color: #f8f9fa;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.testimonios-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonio {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+  width: calc(33% - 4em);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

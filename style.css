@@ -1,10 +1,44 @@
+/*BARRA SUPERIOR*/
+.bg-primario {
+  background-color: #f3fb00;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.btn-redes {
+  color: #d32f23;
+  border-color: #d32f23;
+  width: 34px;
+  height: 34px;
+  transition: 0.5s;
+}
+.btn-redes:hover {
+  color: #000000;
+  background-color: #d32f23;
+  border-color: #d32f23;
+}
+
+.btn-cuadro {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-circulo {
+  border-radius: 50%;
+}
+
 .color-menu {
   background-color: #d32f23;
 }
 
 .d-flex .btn-outline-success {
   color: #000;
-  background-color: #eaff15;
+  background-color: #f3fb00;
   border-color: #f3fb00;
 }
 
@@ -27,11 +61,12 @@
 
 .nav-link i {
   font-size: 2.2em !important;
-  color: rgb(234 255 21);
+  color: #f3fb00;
 }
+
 /*CSS AGREGADO JUAN ARANDA*/
 .nav-link {
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 10px 3.5em !important;
 }
 

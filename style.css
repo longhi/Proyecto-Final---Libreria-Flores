@@ -2,34 +2,40 @@
 .bg-primario {
   background-color: #f3fb00;
 }
-
 .btn {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
 }
-
-.btn-redes {
-  color: #d32f23;
-  border-color: #d32f23;
-  width: 34px;
-  height: 34px;
-  transition: 0.5s;
-}
-.btn-redes:hover {
-  color: #000000;
-  background-color: #d32f23;
-  border-color: #d32f23;
-}
-
 .btn-cuadro {
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .btn-circulo {
   border-radius: 50%;
+}
+
+.btn-redes {
+  color: hsl(0, 100%, 50%) !important;
+  /*border-color: #ffffff !important;*/
+  width: 45px;
+  height: 45px;
+  transition: 0.5s;
+}
+
+.font {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #028058;
+}
+.numans-regular {
+  font-family: "Numans", sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 15px;
+  color: #028058;
 }
 
 .color-menu {

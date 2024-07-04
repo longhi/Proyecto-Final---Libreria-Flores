@@ -90,18 +90,20 @@ section {
 
 .productos-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1em;
 }
 
 .producto {
+  flex: 0 0 auto;
   border: 1px solid #ddd;
   padding: 1em;
-  margin: 1em;
+  margin: 0.5em;
   text-align: center;
-  width: calc(33% - 4em);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  min-width: 250px; /* Adjust the width as needed */
 }
 
 .producto:hover {
@@ -125,7 +127,6 @@ section {
 .btn-agregar:hover {
   background-color: #218838;
 }
-
 #carrito {
   background-color: #f8f9fa;
   padding: 2em;

@@ -88,28 +88,27 @@ section {
   padding: 2em;
 }
 
-.productos-container {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 1em;
+#libreria {
+  padding: 20px;
 }
-
+.productos-container-scroll {
+  display: flex;
+  overflow-x: hidden;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
 .producto {
   flex: 0 0 auto;
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin: 0.5em;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  min-width: 250px; /* Adjust the width as needed */
+  width: 300px;
+  margin-right: 16px;
+  white-space: normal; /* Permitir el ajuste de texto */
 }
 
 .producto:hover {
   transform: translateY(-5px);
 }
 
+/* Estilo de producto */
 .producto img {
   max-width: 100%;
   height: auto;
@@ -127,6 +126,27 @@ section {
 .btn-agregar:hover {
   background-color: #218838;
 }
+
+/* Ocultar barra de desplazamiento */
+.productos-container-scroll {
+  scrollbar-width: none; /* Ocultar barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Ocultar barra de desplazamiento en IE y Edge */
+}
+
+.productos-container-scroll::-webkit-scrollbar {
+  display: none; /* Ocultar barra de desplazamiento en Chrome, Safari y Opera */
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 #carrito {
   background-color: #f8f9fa;
   padding: 2em;

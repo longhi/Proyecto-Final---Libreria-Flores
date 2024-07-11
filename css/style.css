@@ -277,3 +277,12 @@ section {
   border-radius: 10px;
   z-index: 1;
 }
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.cart-summary {
+  margin-top: 20px;
+}

@@ -70,7 +70,14 @@ a {
   background-color: #ffc107 !important;
   color: #000000 !important;
 }
-
+.imagenNosotros {
+  border: 50px solid;
+  border-color: transparent #13357b transparent #13357b;
+}
+.cuadroNosotros {
+  background: linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),
+    url("../img/delivery.jpg");
+}
 /*Carrousel*/
 .carousel-caption {
   position: absolute;
@@ -142,7 +149,6 @@ section {
 .btn-agregar:hover {
   background-color: #218838;
 }
-
 
 #carrito {
   background-color: #f8f9fa;

@@ -134,87 +134,54 @@
           <div class="container">
         <header class="my-4">
             <h1 class="text-center">Librería Bazar Flores</h1>
-            <h2 class="text-center">Carrito de Compras</h2>
+            <h2 class="text-center">Resumen de Compras</h2>
         </header>
 
-        <div class="row">
-            <!-- Lista de productos -->
-            <div class="col-md-8">
-                <h3>Productos</h3>
-                <div id="product-list">
-                    <div class="product row" data-id="1" data-name="Cuaderno Stanford Disney" data-price="4.00">
-                        <div class="col-md-3">
-                            <img src="img/stanford1.jpg" class="img-fluid" alt="Cuaderno Stanford Disney">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Cuaderno Stanford Disney</h4>
-                            <p>Precio: S/. 4.00</p>
-                        </div>
-                        <div class="col-md-3 text-end">
-                            <button class="btn btn-primary btn-add-to-cart">Agregar al Carrito</button>
-                        </div>
-                    </div>
-                    <div class="product row" data-id="2" data-name="Cartuchera de Dinosaurios" data-price="2.50">
-                        <div class="col-md-3">
-                            <img src="img/cartuchera.jpg" class="img-fluid" alt="Cartuchera de Dinosaurios">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Cartuchera de Dinosaurios</h4>
-                            <p>Precio: S/. 2.50</p>
-                        </div>
-                        <div class="col-md-3 text-end">
-                            <button class="btn btn-primary btn-add-to-cart">Agregar al Carrito</button>
-                        </div>
-                    </div>
-                    <div class="product row" data-id="3" data-name="Perfume Mujer XISS Unique" data-price="50.00">
-                        <div class="col-md-3">
-                            <img src="img/perfume_xiss.jpg" class="img-fluid" alt="Perfume Mujer XISS Unique">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Perfume Mujer XISS Unique</h4>
-                            <p>Precio: S/. 50.00</p>
-                        </div>
-                        <div class="col-md-3 text-end">
-                            <button class="btn btn-primary btn-add-to-cart">Agregar al Carrito</button>
-                        </div>
-                    </div>
-                    <div class="product row" data-id="4" data-name="Esponjero Plástico Artesco" data-price="2.50">
-                        <div class="col-md-3">
-                            <img src="img/esponjero_artesco.jpg" class="img-fluid" alt="Esponjero Plástico Artesco">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Esponjero Plástico Artesco</h4>
-                            <p>Precio: S/. 2.50</p>
-                        </div>
-                        <div class="col-md-3 text-end">
-                            <button class="btn btn-primary btn-add-to-cart">Agregar al Carrito</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Carrito de compras -->
-            <div class="col-md-4">
-                <h3>Carrito de Compras</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody id="cart-list"></tbody>
-                </table>
-                <div class="cart-summary">
-                    <p>Total: <span id="cart-total">S/. 0.00</span></p>
-                    <button class="btn btn-success" id="btn-checkout">Finalizar Compra</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+         <!-- Sección de Carrito de Compras -->
+    <section id="carrito" class="container mt-5">
+      <h2>Carrito de Compras</h2>
+      <hr />
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+            <td>Cuardeno Stanford Disney</td>
+            <td>S/. 4.00</td>
+            <td>2</td>
+            <td>S/. 8.00</td>
+            <td><button class="btn btn-danger btn-eliminar bg-danger" data-id="1">Eliminar</button></td>
+            </tr>
+            <tr>
+            <td>Cartuchera de Dinosaurios</td>
+  <td>S/. 2.50</td>
+  <td>1</td>
+  <td>S/. 2.50</td>
+  <td><button class="btn btn-danger btn-eliminar  bg-danger" data-id="2">Eliminar</button></td>
+</tr>
+<tr>
+  <td>Perfume Mujer XISS Unique</td>
+  <td>S/. 50.00</td>
+  <td>1</td>
+  <td>S/. 50.00</td>
+  <td><button class="btn btn-danger btn-eliminar bg-danger" data-id="3">Eliminar</button></td>
+</tr>
+          </thead>
+          <tbody id="carrito-items">
+            <!-- Aquí se agregarán los productos del carrito -->
+          </tbody>
+        </table>
+      </div>
+      <div class="text-end">
+        <h3>Total a Pagar: S/. <span id="total-pagar">0.00</span></h3>
+        <button class="btn btn-danger">Finalizar Compra</button>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">

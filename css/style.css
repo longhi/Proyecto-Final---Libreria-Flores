@@ -138,7 +138,7 @@ section {
 }
 
 .btn-agregar {
-  background-color: #28a745;
+  background-color: #ffc107;
   color: white;
   border: none;
   padding: 0.5em 1em;
@@ -147,7 +147,7 @@ section {
 }
 
 .btn-agregar:hover {
-  background-color: #218838;
+  background-color: #ffc107;
 }
 
 #carrito {
@@ -173,7 +173,7 @@ section {
 }
 
 #btn-comprar {
-  background-color: #007bff;
+  background-color: #ff0000;
   color: white;
   border: none;
   padding: 0.5em 1em;
@@ -182,11 +182,11 @@ section {
 }
 
 #btn-comprar:hover {
-  background-color: #0056b3;
+  background-color: #ffea00;
 }
 
 #contacto {
-  background-color: #e9ecef;
+  background-color: #0075ea;
   padding: 2em;
   margin-top: 2em;
 }
@@ -214,8 +214,8 @@ section {
 }
 
 #contacto button {
-  background-color: #28a745;
-  color: white;
+  background-color: #ffc107;
+  color: rgb(232, 5, 5);
   border: none;
   padding: 0.5em 1em;
   cursor: pointer;
@@ -223,13 +223,7 @@ section {
 }
 
 #contacto button:hover {
-  background-color: #218838;
-}
-
-#testimonios {
-  background-color: #f8f9fa;
-  padding: 2em;
-  margin-top: 2em;
+  background-color: #ffc107;
 }
 
 .testimonios-container {
@@ -240,7 +234,7 @@ section {
 
 .testimonio {
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #ff000067;
   padding: 0em 3em 1em 4em;
   margin: 4em;
   text-align: center;

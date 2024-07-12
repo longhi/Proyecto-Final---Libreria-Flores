@@ -10,8 +10,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -30,12 +28,14 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css" />
+  
   </head>
   <body>
     <!--Barra superior-->
-    <div class="container-fluid bg-primario text-white px-5 py-2">
+    <div class="container-fluid bg-primario text-white  px-5 py-2">
       <div class="row">
-        <div class="col-lg-8 text-center text-lg-start">
+        <div class="col-lg-8 col-md-12 text-center text-lg-start">
           <div class="d-inline-flex align-items-center" style="height: 45px">
             <a class="btn-redes btn-cuadro btn-circulo btn me-2" href=""
               ><i class="fa-solid fa-location-dot"></i
@@ -45,7 +45,7 @@
             ></a>
           </div>
         </div>
-        <div class="col-lg-4 text-center text-lg-center">
+        <div class="col-lg-4  col-md-12  text-center text-lg-center">
           <div class="d-inline-flex align-items-center" style="height: 45px">
             <form class="d-flex" role="search">
             <input
@@ -282,72 +282,91 @@
             <!-- ver más-->
             <div class="producto">
                  <h5>VER MÁS</h5>
-                <a href="views/servicios.html"> <i class=" fa-solid fa-8x fa-chevron-right"></i></a>
+                <a style="color: #000000;"  href="views/servicios.html"> <i class=" fa-solid fa-8x fa-chevron-right"></i></a>
             </div>
         </div>
     </section>
-    <section class="container my-2">
-      <div class="row">
-        <section class="col-md-4 col-lg-4" id="carrito">
-          <h2>Carrito de Compras</h2>
-          <hr />
-          <div class="carrito-container">
-            <ul id="lista-carrito"></ul>
-            <p>Total: <span id="total-carrito">$0.00</span></p>
-            <button id="btn-comprar">Comprar</button>
-          </div>
-        </section>
-        <section
-          class="col-md-4 col-lg-4"
-          id="contacto"
-          style="margin-left: 300px"
-        >
-          <h2>Contacto</h2>
-          <hr />
-          <form id="form-contacto">
-            <div>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required />
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
+   <!-- Sección de Productos en Liquidación -->
+<section id="libreria" class="container my-5">
+  <h2 class="text-center">Liquidación</h2>
+  <hr />
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="producto text-center">
+        <img src="img/stanford1.jpg" alt="artículo 1" class="img-fluid" />
+        <h5>Cuardeno Stanford Disney</h5>
+        <p>PRECIO: S/. 4.00</p>
+        <button class="btn btn-primary btn-agregar" data-id="1" data-nombre="artículo 1" data-precio="4.00">Agregar al Carrito</button>
       </div>
-    </section>
+    </div>
+    <!-- Repetir para otros productos -->
+  </div>
+</section>
 
-    <section id="experiencia">
-      <h2>Experiencia de Usuario</h2>
+<!-- Sección de Carrito y Contacto -->
+<section class="container my-5">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h2>Carrito de Compras</h2>
       <hr />
-      <div class="testimonios-container">
-        <div class="testimonio">
-          <p>
-            "Excelente servicio y gran variedad de libros. Muy recomendada."
-          </p>
-          <h4>- María Pérez</h4>
-        </div>
-        <div class="testimonio">
-          <p>
-            "Encontré todo lo que buscaba y más. La atención es de primera."
-          </p>
-          <h4>- Juan Rodríguez</h4>
-        </div>
-        <div class="testimonio">
-          <p>
-            "Los precios son muy competitivos y la calidad de los productos es
-            insuperable."
-          </p>
-          <h4>- Ana Gómez</h4>
-        </div>
+      <div class="carrito-container">
+        <ul id="lista-carrito"></ul>
+        <p>Total: <span id="total-carrito">$0.00</span></p>
+        <button id="btn-comprar" class="btn btn-success">Comprar</button>
       </div>
-    </section>
+    </div>
+    <div class="col-md-6 mb-4">
+      <h2>Contacto</h2>
+      <hr />
+      <form id="form-contacto">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Testimonios -->
+<section class="container-fluid my-5">
+  <h2 class="text-center">Testimonios de Clientes</h2>
+  <hr />
+  <div class="row">
+    <div class=" col-lg-4 col-md-12 mb-5">
+      <div class="testimonio text-center">
+        <img src="img/testimonio1.jpg" alt="Cliente 1" class="img-fluid rounded-circle mb-3" />
+        <p>"Excelente servicio y productos de calidad."</p>
+        <h5> Maria Vega</h5>
+      </div>
+    </div>
+    <!-- Repetir para otros testimonios -->
+     <div class=" col-lg-4 col-md-12 mb-5">
+      <div class="testimonio text-center">
+        <img src="img/testimonio1.jpg" alt="Cliente 2" class="img-fluid rounded-circle mb-3" />
+        <p >"Excelente servicio y productos de calidad."</p>
+         <h5>Juan Pérez</h5>
+      </div>
+    </div>
+    <div class=" col-lg-4 col-md-12 mb-5">
+      <div class="testimonio text-center">
+        <img src="img/testimonio1.jpg" alt="Cliente 3" class="img-fluid rounded-circle mb-3" />
+        <p>"Excelente servicio y productos de calidad."</p>
+         <h5>Juan Pérez</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Librería / Bazar Flores. Todos los derechos reservados.</p>

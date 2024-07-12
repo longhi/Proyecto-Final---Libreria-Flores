@@ -241,11 +241,10 @@ section {
 .testimonio {
   background-color: white;
   border: 1px solid #ddd;
-  padding: 1em;
-  margin: 1em;
+  padding: 0em 3em 1em 4em;
+  margin: 4em;
   text-align: center;
-  width: calc(33% - 4em);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(70% - 0em);
 }
 
 /*Servicios*/
